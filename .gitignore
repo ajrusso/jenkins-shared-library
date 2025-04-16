@@ -1,0 +1,29 @@
+# Gradle build files
+.gradle/
+build/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Temporary files
+*.class
+*.swp
+*~
+*.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Jenkins-specific files
+.jenkins/
+.jenkinsfile
+
+# Other common exclusions
+target/
+bin/
+out/
