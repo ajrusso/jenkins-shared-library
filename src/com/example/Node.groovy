@@ -12,7 +12,7 @@ class Node implements Serializable {
 
     def nodeGetVer() {
         script.echo 'Getting Node application version...'
-        def version = script.sh "docker build -t $imageName:'${script.env.VERSION}' ."
+        def version = script.sh(script: "node -p \"require('./package.json').version\"", returnStdout: true).trim()
         script.echo "Version: $version"
         return version
     }
